@@ -17,7 +17,7 @@ public class MyController {
 
     @Operation(summary = "Найти N-ное минимальное число из Excel файла")
     @GetMapping("/find-nth-min")
-    public ResponseEntity<?> findNthMinNumber(
+    public ResponseEntity<?> findMinNumber(
             @RequestParam String filePath,
             @RequestParam int n) {
 

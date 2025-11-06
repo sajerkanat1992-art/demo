@@ -25,25 +25,19 @@ public class MyService {
         if (n < 1 || n > numbers.size()) {
             throw new IllegalArgumentException("N должно быть в диапазоне от 1 до " + numbers.size());
         }
-
-        // ПРОСТОЙ АЛГОРИТМ - многопроходный поиск
-        // Сложность: O(n * m) где m - количество чисел в файле
         return findNthMinMultiPass(numbers, n);
     }
 
     private int findNthMinMultiPass(List<Integer> numbers, int n) {
-        // Создаем копию чтобы не менять исходный список
         List<Integer> numbersCopy = new ArrayList<>(numbers);
 
-        // Удаляем n-1 минимальных элементов
         for (int i = 0; i < n - 1; i++) {
             int minIndex = findMinIndex(numbersCopy);
             numbersCopy.remove(minIndex);
         }
-
-        // После удаления n-1 минимальных, следующий минимальный будет n-ным
         return numbersCopy.get(findMinIndex(numbersCopy));
     }
+
     private List<Integer> readNumbersFromExcel(String filePath) throws IOException {
         List<Integer> numbers = new ArrayList<>();
 
