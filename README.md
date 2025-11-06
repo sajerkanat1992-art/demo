@@ -12,7 +12,9 @@ Dremio enables organizations to unlock the value of their data.
 * (Optional) Maven 3.9.3 or later
   
     git clone https://github.com/sajerkanat1992-art/demo.git
+  
     cd demo
+  
     mvn clean install -DskipTests
 
 ### (d) Run/Install
