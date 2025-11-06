@@ -10,6 +10,7 @@ Dremio enables organizations to unlock the value of their data.
 
 * JDK 17 ([OpenJDK](https://adoptium.net/temurin/releases/) or Oracle)
 * (Optional) Maven 3.9.3 or later
+  
     git clone https://github.com/sajerkanat1992-art/demo.git
     cd demo
     mvn clean install -DskipTests
