@@ -23,7 +23,7 @@ public class MyService {
         }
 
         if (n < 1 || n > numbers.size()) {
-            throw new IllegalArgumentException("N должно быть в диапазоне от 1 до " + numbers.size());
+            throw new IllegalArgumentException("n должно быть в диапазоне от 1 до " + numbers.size());
         }
         return findNthMinMultiPass(numbers, n);
     }
